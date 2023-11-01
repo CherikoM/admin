@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 
-const a = () => {
-  console.log('11111')
+const a = () => 
+{
+  console.log('11111');
+
+
 }
 
 a()
