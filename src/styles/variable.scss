@@ -1,0 +1,79 @@
+/**
+ * 全局变量
+ */
+:root {
+  // 卡片间距
+  --card-margin: 10px;
+
+  // 标题白色
+  --title-white: white;
+
+  // 侧边栏背景颜色
+  --menu-bg-color: #001529;
+  // 侧边栏鼠标悬停背景颜色
+  --menu-hover-color: black;
+  // 侧边栏logo区高度
+  --menu-logo-height: 50px;
+  // 侧边栏标题字号
+  --menu-title-size: 20px;
+  // 侧边栏鼠标悬停项颜色
+  --menu-hover-color: black !important;
+
+  // 属性选择标签颜色
+  --select-attr-tag-color: #666;
+  // 属性选择标签字号
+  --select-attr-tag-font-size: 12px;
+
+  // 表单标签宽度
+  --form-label-width: 6em;
+
+  // 首页小标题颜色
+  --home-sub-title-color: #aaa;
+}
+
+/**
+ * scss变量
+ */
+
+/**
+ * scss全局混入
+ */
+@mixin full {
+  width: 100vw;
+  height: 100vh;
+}
+
+@mixin square($width) {
+  width: $width;
+  height: $width;
+}
+
+@mixin circle($width) {
+  @include square($width);
+  border-radius: 50%;
+}
+
+@mixin background-cover($url) {
+  background: url($url) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin table-margin() {
+  margin: 15px 0;
+}
+
+@mixin one-line-ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin many-line-ellipsis($line) {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}

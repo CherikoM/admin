@@ -1,0 +1,17 @@
+// 引入清除默认样式
+@import './reset.scss';
+@import './adjust.scss';
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}

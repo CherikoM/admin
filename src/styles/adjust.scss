@@ -1,0 +1,26 @@
+.el-popper {
+  
+  .el-menu {
+    background-color: var(--menu-bg-color);
+  }
+
+  .el-menu-item {
+    --el-menu-hover-bg-color: black !important;
+
+    &.is-active {
+      color: #79bbff;
+    }
+  }
+
+  .el-sub-menu {
+    --el-menu-hover-bg-color: black !important;
+
+    .el-menu--inline {
+      background-color: transparent !important;
+    }
+
+    .el-menu-item {
+      --el-menu-bg-color: black !important;
+    }
+  }
+}
