@@ -13,7 +13,7 @@ const chartEl = ref()
 
 const getMap = async () => {
   const res = await fetch(
-    'https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json',
+    'http://geo.datav.aliyun.com/areas_v3/bound/100000_full.json',
   )
   const chinaJSON = await res.json()
   echarts.registerMap('china', chinaJSON)
