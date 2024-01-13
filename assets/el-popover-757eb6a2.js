@@ -1,0 +1,1 @@
+import{ag as a}from"./index-4c180a68.js";const s=e=>new Promise(t=>{setTimeout(()=>{t("")},e)}),o=a("Setting",{state:()=>({menuFold:!1,refreshing:!1,loading:!1}),actions:{async refresh(){this.refreshing=!0,await s(500),this.refreshing=!1},async load(e){this.loading=!0,e&&await e(),await s(500),this.loading=!1}}});export{s,o as u};

@@ -1,0 +1,1 @@
+import{i as o}from"./index-4c180a68.js";const t=["image/jpeg","image/png","image/webp"],n=e=>r=>{if(t.includes(r.type)){if(r.size/1024/1024>2)return o.error("请上传2MB以内的图片"),!1}else return o.error("请上传静态图片"),!1;return e&&e(),!0},a=e=>r=>{o.error("图片上传失败，请重试"),e&&e()};export{n as b,a as o};
