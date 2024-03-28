@@ -59,7 +59,7 @@ const formEl = ref()
 // 表单数据
 const form = reactive({
   username: 'admin',
-  password: 'atguigu123',
+  password: '111111',
 })
 
 const rules = reactive<FormRules>({
